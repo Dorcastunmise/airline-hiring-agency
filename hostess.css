@@ -1,20 +1,24 @@
 * {
     box-sizing: border-box;
 }
+#logo {
+    float: left;
+}
 div.navigation {
     padding: 0;
+    float: right;
     overflow: hidden;
+    margin: 0;
     display: block;
-    background-color: rgb(226, 218, 218);
-    
+    background-color: rgb(226, 218, 218);    
     margin-bottom: 7px;
 }
 .navigation ul a:hover {
-    background-color: rgb(61, 41, 150);
+    background-color: lightblue;
     color: rgb(231, 224, 224);
 }
 .active {
-    background-color: rgb(116, 127, 190);
+    background-color: rgb(86, 107, 226);
     color: rgb(243, 234, 234);
 }
 div .navigation ul {
@@ -28,7 +32,7 @@ div .navigation ul {
     padding: 56px;
 }
 .flight {
-    font-family: monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     word-spacing: 2px;
     text-shadow: 3px 2px rgb(102, 102, 185);
 }
