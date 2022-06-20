@@ -64,6 +64,16 @@ div.navigation {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+.flight {
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 10px;
+color: rgb(44, 43, 99);
+}
+div.flight.dreams {
+font-style: italic; 
+font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(53, 43, 97);        
+}
   
 .dropdown-content a {
     float: none;
@@ -81,25 +91,6 @@ div.navigation {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-.flight {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 10px;
-    color: rgb(44, 43, 99);
-}
-div.flight.dreams {
-    font-style: italic; 
-    font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(53, 43, 97);        
-}
-.attendant {
-    display: block;
-    opacity: 0.7;
-    margin-left: 30px;
-    margin-right: 0;
-    width: 50%;
-    padding: 0;
-}
 .company {
     border: 1px thin grey;
     border-radius: 5px;
@@ -107,36 +98,27 @@ div.flight.dreams {
     border: 1px thin grey;
     box-shadow: 2px 1px 3px 2px rgb(148, 148, 207);
     border-radius: 68px;
-    margin-left: 880px;
-    margin-top: -2220px;
-    margin-bottom: 300px;
+    margin: 0;
+    padding: 0;
 }
-#young {
-    margin-left: 690px;
-    margin-top: -290px;
+#youngest {
+    margin: 0;
+    padding: auto;
     word-spacing: 4px;
     font-size: large;
     color: rgb(32, 32, 73);
 }
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    background-color: rgba(32, 34, 59, 0.616);
-    padding: 5px;
+.limited {
+    background-color: rgb(96, 169, 218);
     color: white;
-    border-radius: 4px 3px;
-    margin-left: 860px;
-    box-shadow: 2px 3px 2px rgb(76, 72, 72);
+    text-align: center;
+    font-size: 22px;
+    padding: 0;
+    margin: auto;
+    display: block;
 }
-a.button:hover {
-    color: whitesmoke;
-    background-color: rgb(49, 49, 87);
-}
-.partner {
-    font-size: 15px;
-    word-spacing: 5px;
-    margin-left: 50px;
-    color: rgb(43, 43, 71);
+.limited:hover {
+    background-color: rgb(54, 66, 100);
+    color: rgb(215, 214, 226);
+    display: block;
 }
