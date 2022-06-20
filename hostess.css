@@ -1,9 +1,32 @@
 * {
     box-sizing: border-box;
 }
+div.navigation {
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    background-color: rgb(226, 218, 218);
+    
+    margin-bottom: 7px;
+}
+div .navigation ul {
+    border-right: 1px;
+}
+.navigation a {
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(73, 70, 70);
+    text-align: center;
+    padding: 56px;
+}
+.flight {
+    font-family: monospace;
+    word-spacing: 2px;
+    text-shadow: 3px 2px rgb(102, 102, 185);
+}
 .attendant {
     display: block;
-    opacity: 0.4;
+    opacity: 0.7;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
