@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(184, 184, 236);
+}
+.attendant {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 0;
+}
