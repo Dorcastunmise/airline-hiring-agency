@@ -7,6 +7,7 @@
 div.navigation {
     padding: 0;
     overflow: hidden;
+    border-radius: 4px;
     margin: 0;
     display: inline-block;
     color: whitesmoke;
@@ -30,57 +31,70 @@ div.navigation {
     color: white;
     text-align: center;
     padding: 56px;
-    border-left: 1px solid white;
+    border-left: 2px solid white;
 }
-.navigation a #tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-.navigation a #tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: rgb(231, 227, 227);
-    box-shadow: 3px 3px black;
-    color: rgb(56, 53, 68);
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    padding-left: 5px;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: white;
+    background-color: darkslateblue; 
+  }
+  
+  .dropdown-content {
+    display: none;
     position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: 150%;
-    left: 50%;
-    margin-left: -60px;
-}
-#tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-}
-      
-#tooltip:hover .tooltiptext {
-    visibility: visible;
-}
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 .flight {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
     color: rgb(44, 43, 99);
 }
-div.dreams {
+div.flight.dreams {
     font-style: italic; 
     font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(49, 39, 95);        
+    color: rgb(53, 43, 97);        
 }
 .attendant {
     display: block;
     opacity: 0.7;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-left: 30px;
+    margin-right: 0;
+    width: 50%;
     padding: 0;
 }
