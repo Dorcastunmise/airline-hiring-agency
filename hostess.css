@@ -9,13 +9,21 @@ div.navigation {
     
     margin-bottom: 7px;
 }
+.navigation ul a:hover {
+    background-color: rgb(61, 41, 150);
+    color: rgb(231, 224, 224);
+}
+.active {
+    background-color: rgb(116, 127, 190);
+    color: rgb(243, 234, 234);
+}
 div .navigation ul {
     border-right: 1px;
 }
 .navigation a {
     text-decoration: none;
     font-style: italic;
-    color: rgb(73, 70, 70);
+    color: rgb(63, 59, 59);
     text-align: center;
     padding: 56px;
 }
