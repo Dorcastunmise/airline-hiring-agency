@@ -1,15 +1,48 @@
 * {
     box-sizing: border-box;
 }
-#logo {
-    float: left;
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
 }
+.everything {
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: bold; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 100px 1fr 100px;
+} 
+.everything > div{
+    border: 1px thick gray;
+    padding: 10px;
+}
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+.air {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(61, 61, 97);
+}
+.header.logo {
+    float: left;
+    width: 3px;
+    height: 2px;
+    opacity: 0.4;
+}
+
 div.navigation {
-    padding: 0;
-    overflow: hidden;
+    padding: 5px;
+    overflow: auto;
     border-radius: 4px;
     margin: 0;
-    display: inline-block;
+    display: block;
     color: whitesmoke;
     background-color: rgb(141, 164, 235);    
     margin-bottom: 7px;
@@ -34,7 +67,7 @@ div.navigation {
     font-style: italic;
     color: white;
     text-align: center;
-    padding: 56px;
+    padding: 6px;
     border-left: 2px solid white;
 }
 .dropdown {
@@ -64,16 +97,6 @@ div.navigation {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.flight {
-font-family: Arial, Helvetica, sans-serif;
-padding-top: 10px;
-color: rgb(44, 43, 99);
-}
-div.flight.dreams {
-font-style: italic; 
-font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: rgb(53, 43, 97);        
-}
   
 .dropdown-content a {
     float: none;
@@ -91,34 +114,36 @@ color: rgb(53, 43, 97);
   .dropdown:hover .dropdown-content {
     display: block;
   }
+.second {
+    grid-row-start: 3;
+    grid-row-end: span 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 .company {
     border: 1px thin grey;
-    border-radius: 5px;
     opacity: 0.8; 
     border: 1px thin grey;
     box-shadow: 2px 1px 3px 2px rgb(148, 148, 207);
-    border-radius: 68px;
-    margin: 0;
-    padding: 0;
-}
-#youngest {
-    margin: 0;
-    padding: auto;
-    word-spacing: 4px;
-    font-size: large;
-    color: rgb(32, 32, 73);
+    border-radius: 10px;
 }
 .limited {
-    background-color: rgb(96, 169, 218);
-    color: white;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    word-spacing: 4px;
+    font-size: 5px;
+    color: rgb(39, 39, 82);
+}
+
+.footer {
+    background-color: rgb(218, 108, 96);
+    color: brown;
     text-align: center;
     font-size: 22px;
-    padding: 0;
-    margin: auto;
-    display: block;
+    padding: 15px;
+    margin-top: 310px;
 }
-.limited:hover {
-    background-color: rgb(54, 66, 100);
-    color: rgb(215, 214, 226);
-    display: block;
+.footer:hover {
+    background-color: rgb(157, 204, 157);
+    color: darkslateblue;
 }
