@@ -8,12 +8,10 @@ body {
 .everything {
     width: 100vw;
     height: 100vh;
-    font-size: 20px;
-    font-weight: bold; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 50px;
 } 
 .everything > div{
     border: 1px thick gray;
@@ -112,3 +110,45 @@ div.navigation {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .picture {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    border: 1px thin grey;
+    width: 150px;
+    height: 60px;
+    box-shadow: 3px 2px 1px rgb(56, 55, 55);
+  }
+  .detail {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: span 2;
+    color: rgb(41, 41, 63);
+    letter-spacing: 3%;
+    word-spacing: 3%;
+    background: linear-gradient(105deg);
+    display: inline-block;
+    box-shadow: inset 2px 2px 3px rgb(77, 70, 70),
+                inset -2px -2px 3px rgb(69, 99, 199);  
+    
+}
+.separate {
+
+    margin-left: 990px;
+    margin-top: -270px;
+    display: inline-block;
+    border-radius: 30px;
+    letter-spacing: 3%;
+    word-spacing: 3%;
+    color: rgb(45, 52, 71);
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(105deg);
+    box-shadow: inset 2px 2px 3px rgb(87, 82, 82),
+                inset -2px -2px 3px rgb(61, 69, 95);
+    
+}
