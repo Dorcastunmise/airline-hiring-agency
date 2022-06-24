@@ -146,7 +146,7 @@ section {
     background: url(image.png) no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 4px);
 }
 
 .second {
@@ -173,8 +173,8 @@ a.button:hover {
 }
 .quotes {
     display: grid;
-    margin-right: 650px;
-    margin-left: 100px;
+    margin-right: 350px;
+    margin-left: 500px;
     font-weight: bold;
     padding: 20px;
     word-spacing: 1%;
@@ -188,9 +188,9 @@ a.button:hover {
 .payments {
     display: grid;
     font-weight: bold;
-    margin-right: 550px;
-    margin-left: 200px;
-    padding: 20px;
+    margin-right: 300px;
+    margin-left: 400px;
+    padding: 10px;
     border-radius: 6px;
     word-spacing: 1%;
     color: rgb(45, 52, 71);
@@ -199,10 +199,15 @@ a.button:hover {
     box-shadow: outset 2px 2px 3px rgb(77, 70, 70),
                 inset -2px -2px 3px rgb(69, 99, 199);
 }
+.picture {
+    width: 280px;
+    height: 250px;
+    margin-left: 20px;
+}
 .questions {
     display: grid;
-    margin-right: 450px;
-    margin-left: 300px;
+    margin-right: 650px;
+    margin-left: 100px;
     padding: 30px;
     border-radius: 6px;
     word-spacing: 1%;
