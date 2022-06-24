@@ -3,25 +3,23 @@
 }
 body {
     margin: 0;
-    overflow: hidden;
+    overflow: none;
     color: rgb(38, 38, 54);
     background: rgb(210, 210, 243);
 }
 .everything {
     width: 100vw;
+    grid-gap: 10px;
+    grid-template-columns: 30% 40% 30%;
+    grid-gap: 10px;
+    grid-auto-rows: (minmax(min-content, max-content));    ;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
 } 
-.everything > div{
-    border: 1px thick gray;
-    padding: 10px;
-}
 .header {
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-area: header;
 }
 .air {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -38,13 +36,14 @@ body {
 div.navigation {
     padding: 10px;
     overflow: hidden;
+    width: 100vw;
     border-radius: 4px;
     margin: 0;
-    display: block;
+    display: inline-block;
     color: whitesmoke;
     background-color: rgb(141, 164, 235);    
     margin-bottom: 7px;
-}
+} 
 .active {
     color: white;
     background-color: rgb(58, 58, 100);
@@ -57,19 +56,23 @@ div.navigation {
     color: rgb(241, 235, 235);
 }
 .navigation ul {
-    padding-left: 5px;
+    padding-left: 4px;
+    overflow: hidden;
+    width: fit-content;
 
+    margin: 0;
 }
 .navigation a {
+    width: fit-content;
     text-decoration: none;
     font-style: italic;
     color: white;
     text-align: center;
-    padding-left: 16px;
-    padding-top: 6px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    border-left: 2px so lid white;
+    padding-left: 6px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    border-left: 2px solid white;
 }
 .dropdown {
     float: left;
@@ -118,9 +121,10 @@ div.navigation {
   .another {
     margin: 10px;
     padding: 0;
+    grid-area:another;
     width: 100%;
     grid-column-start: 1;
-    grid-column-end: span 3;
+    grid-column-end: 3;
   }
   .picture {
     grid-row-start: 10;
@@ -137,7 +141,8 @@ div.navigation {
   }
   .detail {
     grid-column-start: 1;
-    grid-column-end: span 3;
+    grid-column-end: 3;
+    grid-area: detail;
     padding: auto;
     margin-right: 0;
     color: rgb(41, 41, 63);
@@ -149,7 +154,7 @@ div.navigation {
                 inset -2px -2px 3px rgb(61, 69, 95);
 }
 .separate {
-
+    grid-area: separate;
     letter-spacing: 3%;
     word-spacing: 3%;
     color: rgb(45, 52, 71);   
@@ -174,3 +179,28 @@ hr.stylelast:before {
     border-width: 0 0 1px 0; 
     border-radius: 20px; 
 }  
+footer {
+    background-color: #3d3d3f;
+    color: rgb(255, 255, 255);
+    grid-area: footer;
+    line-height: 13vh;
+    border-radius: 9px;
+    background: linear-gradient(105deg);
+    box-shadow: inset 2px 2px 3px rgb(77, 70, 70),
+                inset -2px -2px 3px rgb(69, 99, 199);
+}
+@media only screen and (max-width:550px) {
+    .everything {
+       width: 100vw;
+       height: 100vh;
+       font-size: 10px;
+       font-weight: bold; 
+       display: grid;
+       text-align: center;
+       padding: 10px;
+       margin: 0;
+       grid-gap: 10px;
+       grid-template-columns: repeat(2, 1fr);
+       grid-auto-rows:  (minmax(min-content, max-content));
+    }
+}
