@@ -7,13 +7,17 @@
 
 }
 body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
     background: rgb(141, 164, 235);
     height: 120px;
     width: 100%;
-    box-shadow: 2px 4px rgb(82, 80, 80);
+    box-shadow: 2px 3px rgb(202, 202, 202);
 }
 .photo {
     width: 60px;
@@ -144,130 +148,40 @@ nav ul li a:hover {
 }
 section {
     background: url(image.png) no-repeat;
-    background-size: cover;
+    background-size: 80vw;
+    opacity: 0.7;
     overflow: hidden;
     height: calc(100vh - 4px);
 }
-.contain{
-    position: relative;
-    width: 100%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-  }
-  
-  .contain:hover .overlay {
-    width: 100%;
-  }
-  
-  .text {
-    white-space: nowrap; 
+.separate {
+    letter-spacing: 4%;
+    word-spacing: 6%;
     color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-.second {
-    margin-left: 30px;
-    word-spacing: 4px;
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(39, 39, 82);
-}
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    background-color: rgba(40, 42, 66, 0.616);
-    padding: 5px;
-    color: white;
-    border-radius: 4px 3px;
-    box-shadow: 2px 3px 2px rgb(76, 72, 72);
-}
-a.button:hover {
-    color: whitesmoke;
-    background-color: rgb(73, 73, 126);
-}
-.quotes {
     display: grid;
-    margin-right: 250px;
-    margin-left: 700px;
-    font-weight: bold;
-    padding: 20px;
-    word-spacing: 1%;
-    border-radius: 6px;
+    margin: 0;
+    padding: 0;
     color: rgb(45, 52, 71);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: linear-gradient(105deg);
-    box-shadow: inset 2px 2px 3px rgb(77, 70, 70),
-                inset -2px -2px 3px rgb(69, 99, 199);
-}
-.payments {
-    display: grid;
     font-weight: bold;
-    margin-top: -180px;
-    margin-right: 400px;
-    margin-left: 450px;
-    padding: 10px;
-    border-radius: 6px;
-    word-spacing: 1%;
-    color: rgb(45, 52, 71);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(105deg);
     box-shadow: inset 2px 2px 3px rgb(77, 70, 70),
                 inset -2px -2px 3px rgb(69, 99, 199);
 }
 .picture {
-    width: 280px;
-    height: 250px;
-    margin-left: 20px;
+    float: right;
+    width: 190px;
+    height: 70px;
+    
 }
-.questions {
-    display: grid;
-    margin-right: 650px;
-    margin-left: 300px;
-    padding: 30px;
-    border-radius: 6px;
-    word-spacing: 1%;
+.detail {
+    margin-left: 60px;
+    margin-top: 80px;
+    padding: 0;
     color: rgb(45, 52, 71);
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(105deg);
     box-shadow: inset 2px 2px 3px rgb(77, 70, 70),
-                inset -2px -2px 3px rgb(69, 99, 199);
-}
-.author {
-    display: grid;
-    margin-right: 300px;
-    margin-left: 300px;
-    padding: 0;
-    border-radius: 3px;
-    word-spacing: 1%;
-    color: rgb(45, 52, 71);
-    font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: linear-gradient(105deg);
-    box-shadow: outset 2px 2px 3px rgb(77, 70, 70),
                 inset -2px -2px 3px rgb(69, 99, 199);
 }
 footer {
@@ -314,3 +228,18 @@ ul.navigation-lists li {
     text-align: center;
     border-left: 1px thin white;
 }
+div.animation {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(126, 124, 226);
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+  }
+  
+  @keyframes myfirst {
+    0%   {background-color:rgb(126, 124, 226); left:0px; top:0px;}
+    25%  {background-color:yellow; left:700px; top:0px;}
+    50%  {background-color:blue; left:700px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:rgb(126, 124, 226); left:0px; top:0px;}
+  }

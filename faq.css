@@ -41,7 +41,7 @@ header {
 }
 
 ul.navigation-list {
-    list-style-type: none;
+    list-style: none;
     background-color: rgb(141, 164, 235);
     box-shadow: 5px 5px 10px #1071a2, -5px -5px 10px #1699db;
     background: linear-gradient(105deg);
@@ -52,10 +52,10 @@ ul.navigation-list {
 .navigation-list ul {
     padding: 0;
     margin: 10px;
-    list-style-type: none
+    list-style: none
 }
 .navigation-list {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     background: rgb(141, 164, 235);;
@@ -71,17 +71,17 @@ ul.navigation-list {
 ul.navigation-list li {
     float: left;
     text-decoration: none;
-    list-style-type: none;
+    list-style: none;
     margin: 7px;
 }
 .navigation-item {
     text-decoration: none;
-    list-style-type: none;
+    list-style: none;
     margin: 0 10px;
 }
 .navigation-item a {
     text-decoration: none;
-    list-style-type: none;
+    list-style: none;
     font-style: italic;
     color: white;
     text-align: center;
